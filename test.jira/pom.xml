@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>come.jira.test</groupId>
+  <artifactId>test.jira</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>test.jira</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.atlassian.jira</groupId>
+    	<artifactId>jira-rest-java-client</artifactId>
+    	<version>2.0.0-m2</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.atlassian.jira</groupId>
+    	<artifactId>jira-rest-java-client-api</artifactId>
+    	<version>2.0.0-m19</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.atlassian.jira</groupId>
+    	<artifactId>jira-rest-java-client-core</artifactId>
+    	<version>2.0.0-m19</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-json</artifactId>
+    	<version>1.18.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>ant</groupId>
+    	<artifactId>ant-junit</artifactId>
+    	<version>1.6.5</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.sun.jersey</groupId>
+    	<artifactId>jersey-client</artifactId>
+    	<version>1.18.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.google.guava</groupId>
+    	<artifactId>guava-annotations</artifactId>
+    	<version>r03</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.googlecode.sli4j</groupId>
+    	<artifactId>sli4j-slf4j-simple</artifactId>
+    	<version>2.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>commons-io</groupId>
+    	<artifactId>commons-io</artifactId>
+    	<version>20030203.000550</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.4</source>
+          <target>1.4</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
